@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hometask4</title>
+</head>
+<body>
+	<script>
+		
+	var number = +prompt("Write a number", "Number");
+		
+		if (number > 9) {
+			alert("Sorry!");
+		} else {
+		var symbol = prompt("Write a symbol", "Symbol");
+
+			function createTriangle(number, symbol) {
+			
+			var line = "";
+			var stars = "";
+			for (var i = 1; i <= number; i++) {
+			stars += symbol;
+			line = line + stars + "\n";
+			}
+			alert(line);
+		
+			}
+			var resalt = createTriangle(number, symbol);
+		}
+
+	</script>
+
+	<script>
+
+		function f (a = 2, b = 3, c) {
+				if (typeof c !== "undefined" && typeof c === "function") {
+					var cResult = c();
+					if (typeof cResult !== "undefined") {
+						return cResult;
+					}
+				}
+				function sum (a, b) {
+					return a + b;
+				}
+				var result = sum(a, b);
+				console.log(result);
+			}
+
+	</script>
+</body>
+</html>
