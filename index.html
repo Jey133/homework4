@@ -7,23 +7,21 @@
 <body>
 	<script>
 		
-	var number = +prompt("Write a number", "Number");
+		var number = +prompt("Write a number", "Number");
 		
 		if (number > 9) {
 			alert("Sorry!");
 		} else {
-		var symbol = prompt("Write a symbol", "Symbol");
+			var symbol = prompt("Write a symbol", "Symbol");
 
 			function createTriangle(number, symbol) {
-			
-			var line = "";
-			var stars = "";
-			for (var i = 1; i <= number; i++) {
-			stars += symbol;
-			line = line + stars + "\n";
-			}
-			alert(line);
-		
+				var line = "";
+				var stars = "";
+				for (var i = 1; i <= number; i++) {
+				stars += symbol;
+				line = line + stars + "\n";
+				}
+				alert(line);
 			}
 			var resalt = createTriangle(number, symbol);
 		}
@@ -43,8 +41,8 @@
 					return a + b;
 				}
 				var result = sum(a, b);
-				console.log(result);
-			}
+				return result;
+		}
 
 	</script>
 </body>
